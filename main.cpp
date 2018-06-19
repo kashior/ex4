@@ -3,6 +3,7 @@
 
 #include "ex4_header.h"
 #include "unit_test_util.h"
+#include "GameBoard.h"
 
 using std::string;
 using std::get;
@@ -17,6 +18,8 @@ static bool test1(){
 		}
 	}
 	int occurence[4]= {0,0,0,0};
+	auto it=board.begin();
+
 	for(auto pieceInfo : board){
 		occurence[get<3>(pieceInfo)]++;
 	}
