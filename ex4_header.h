@@ -4,5 +4,5 @@
 
 
 #include <utility>
-
+#include "GameBoard.h"
 #endif //EX4_EX4_HEADER_H
